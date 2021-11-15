@@ -48,7 +48,9 @@ public class CuentaTest extends TestCase {
      * Test of retirar method, of class Cuenta.
      */
     @Test
-    public void testRetirar() {
+    public void testRetirar() { // SI LO HACIA EN DIFERENTES METODOS QUE ERA MI INTENCION INICIAL
+                                // SE RESETEABAN LOS VALORES DE LOS ATRIBUTOS DE LAS CUENTAS ASI QUE HE TENIDO QUE HACER
+                                // TODAS LAS OPERACIONES EN UNA.
 
         assertEquals(-150, a.retirar(200));
         assertEquals(-350, b.retirar(350));
