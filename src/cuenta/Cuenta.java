@@ -15,15 +15,15 @@ public class Cuenta {
     private int balance;
     
     public Cuenta(int id,int balance){
-//        this.balance= balance;
-//        this.id = id;
+        this.balance= balance;
+        this.id = id;
                 
     }
-    public void retirar(int id){
-        
+    public int retirar(int retira){
+      return 0;  
     }
-    public void depositar(int id){
-    
+    public int depositar(int deposita){
+        return 0;
     }
     
 }
