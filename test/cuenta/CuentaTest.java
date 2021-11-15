@@ -28,6 +28,7 @@ public class CuentaTest extends TestCase {
 
     @BeforeAll
     public static void setUpClass() {
+        
     }
 
     @AfterAll
@@ -36,6 +37,7 @@ public class CuentaTest extends TestCase {
 
     @BeforeEach
     public void setUp() {
+        
     }
 
     @AfterEach
@@ -50,17 +52,19 @@ public class CuentaTest extends TestCase {
 
         assertEquals(-150, a.retirar(200));
         assertEquals(-350, b.retirar(350));
+        assertEquals(-50, a.depositar(100));
+        assertEquals(-350, b.retirar(200));
+        assertEquals(-350, b.retirar(150));
+        assertEquals(-250, a.retirar(200));
+        assertEquals(-300, b.depositar(50));
+        assertEquals(-400, b.retirar(100));
+
 
     }
-
+    
     /**
      * Test of depositar method, of class Cuenta.
      */
-    @Test
-    public void testDepositar() {
-        assertEquals(100, a.depositar(100));
-        assertEquals(50, b.depositar(50));
-
-    }
+    
 
 }
